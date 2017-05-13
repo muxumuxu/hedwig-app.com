@@ -3,15 +3,6 @@
   -moz-osx-font-smoothing: grayscale
   outline: none
 
-h1
-  font-family: $primary-font
-  font-size: 1.875em
-  // 30px / 16px
-  color: $black
-  font-weight: 300
-  line-height: 1.5em
-  // 35px / 30px
-
 ul
   font-family: $primary-font
 
@@ -39,6 +30,15 @@ header
           color: $brand-green
           text-decoration: none
 
+.fade
+  animation-duration: 3s
+  animation-name: fade
+  @keyframes fade
+    from
+      opacity: 0
+    to
+      opacity: 1
+
 .wrapper
   max-width: 800px
   margin: 100px auto
@@ -50,8 +50,17 @@ header
       height: 71px
       background: url(../images/regular-hedwig-icon.svg) no-repeat 21px 17px
       margin-bottom: 20px
-    h1
+    .title
       max-width: 480px
+      font-family: $primary-font
+      font-size: 1.875em
+      // 30px / 16px
+      color: $black
+      font-weight: 300
+      line-height: 1.5em
+      // 35px / 30px
+      h1, span
+        display: inline
     img
       margin-top: 30px
       &:hover

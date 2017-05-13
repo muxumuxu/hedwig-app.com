@@ -11,9 +11,7 @@ fr:
       link: "#"
 
   hero:
-    title-rent: Programmez vos SMS avec Hedwig, et n'oubliez plus de payer votre loyer
-    title-birthday: Programmez vos SMS avec Hedwig, et n'oubliez plus aucun anniversaire
-    title-key: Programmez vos SMS avec Hedwig, et n'oubliez plus de rendre vos clés
+    title: Programmez vos SMS avec Hedwig, et n'oubliez plus 
     download:
       title: Télécharger sur l'App Store
       link: "#"

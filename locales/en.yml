@@ -10,9 +10,7 @@ en:
       link: "#"
 
   hero:
-    title-rent: Schedule SMS with Hedwig, <br>and never forget to pay your rent
-    title-birthday: Schedule SMS with Hedwig, <br>and never forget any birthday
-    title-key: Schedule SMS with Hedwig, <br>and never forget to give your keys back
+    title: Schedule SMS with Hedwig, <br>and never forget to pay your rent
     download:
       title: Download on the App Store
       link: "#"

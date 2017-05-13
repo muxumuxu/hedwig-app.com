@@ -14,7 +14,9 @@ header
 .wrapper
   .left
     .icon
-    h1 = t 'hero.title-rent'
+    .title
+      h1 = t 'hero.title'
+      span.fade
     = link_to t 'nav.home.link'
       = image_tag "app-store-badge.svg"
     - if I18n.locale == :fr
