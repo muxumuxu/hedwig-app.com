@@ -16,7 +16,7 @@ header
     .icon
     .title
       h1 = t 'hero.title'
-      span.fade
+      span
     = link_to t 'nav.home.link'
       = image_tag "app-store-badge.svg"
     - if I18n.locale == :fr
@@ -31,3 +31,11 @@ header
           li 
             = link_to item[:link]
               = item[:title]
+              
+  .right 
+    .screen
+      .message.fadeinup
+        = "Hey boloss cette fois-ci tu n'oublies pas de payer ton loyer 💰⏰"
+      p = "Hedwig - Now"
+    .hand
+      = image_tag "phone-iphone.svg", class: "device"

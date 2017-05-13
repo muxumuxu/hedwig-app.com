@@ -7,8 +7,8 @@ ul
   font-family: $primary-font
 
 header
-  max-width: 780px
-  margin: 20px auto
+  max-width: 900px
+  margin: 30px auto
   ul
     display: flex
     flex-direction: row
@@ -31,18 +31,40 @@ header
           text-decoration: none
 
 .fade
-  animation-duration: 3s
+  animation-duration: 5s
   animation-name: fade
   @keyframes fade
+    0%
+      opacity: 0
+    20%
+      opacity: 1
+    80%
+      opacity: 1
+    100%
+      opacity: 0
+
+.fadeinup
+  animation-duration: 2s
+  animation-fill-mode: forwards
+  animation-name: fadeInUp
+  @keyframes fadeInUp
     from
       opacity: 0
+      -webkit-transform: translate3d(0, 20px, 0)
+      transform: translate3d(0, 20px, 0)
+
     to
       opacity: 1
+      -webkit-transform: none
+      transform: none
 
 .wrapper
-  max-width: 800px
+  max-width: 900px
   margin: 100px auto
+  display: flex
+  flex-direction: row
   .left
+    padding-top: 75px
     .icon
       border: 1px solid #ECECEC
       border-radius: 20px
@@ -81,3 +103,46 @@ header
           // 13px / 16px
           color: $light-grey
           text-decoration: none
+  .right
+    position: relative
+    font-family: $secondary-font
+    .hand
+      position: absolute
+      top: 0
+      left: 70px
+    .screen
+      position: absolute
+      top: 106px
+      left: 153px
+      width: 216px
+      height: 290px
+      z-index: 2
+      .message
+        z-index: 2
+        background-color: $brand-green
+        color: $white
+        border-radius: 15px
+        width: 146px
+        padding: 12px
+        float: right
+        margin: 10px 10px 7px
+        font-size: 0.9375em
+        // 15px / 16px
+        line-height: 1.1333333333em
+        // 17px / 15px
+      p
+        float: right
+        margin-right: 10px
+        color: $lighter-grey
+        font-size: 0.6875em
+        // 11px / 16px
+        animation-duration: 2s
+        animation-delay: 2s
+        animation-name: fade
+        animation-fill-mode: forwards
+        opacity: 0
+        @keyframes fade
+          from
+            opacity: 0
+          to
+            opacity: 1
