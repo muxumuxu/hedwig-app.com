@@ -1,2 +1,29 @@
 en:
-  title: Welcome !
+  nav:
+    support:
+      title: Support
+      link: mailto:hedwig@muxumuxu.com
+    home:
+      link: "../en"
+    download:
+      title: Download
+      link: "#"
+
+  hero:
+    title-rent: Schedule SMS with Hedwig, <br>and never forget to pay your rent
+    title-birthday: Schedule SMS with Hedwig, <br>and never forget any birthday
+    title-key: Schedule SMS with Hedwig, <br>and never forget to give your keys back
+    download:
+      title: Download on the App Store
+      link: "#"
+
+  footer:
+    muxu:
+      title: Made with love by Muxu.Muxu
+      link: "https://www.muxumuxu.com"
+    legal:
+      title: Legal
+      link: "../en/legal"
+    lang:
+      title: French version
+      link: "../"

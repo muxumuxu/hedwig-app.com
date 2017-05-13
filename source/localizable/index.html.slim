@@ -1,1 +1,31 @@
-h1 = t 'title'
+header 
+  ul 
+    li.support
+      = link_to t 'nav.support.link'
+        = t 'nav.support.title'
+    li.hedwig
+      = link_to t 'nav.home.link'
+        = t 'nav.home.title'
+    li.download
+      = link_to 'nav.download.link'
+        = t 'nav.download.title'
+
+
+.wrapper
+  .left
+    .icon
+    h1 = t 'hero.title-rent'
+    = link_to t 'nav.home.link'
+      = image_tag "app-store-badge.svg"
+    - if I18n.locale == :fr
+      ul.fr
+        -t('footer').each do |id, item|
+          li 
+            = link_to item[:link]
+              = item[:title]
+    - else 
+      ul.en
+        -t('footer').each do |id, item|
+          li 
+            = link_to item[:link]
+              = item[:title]
