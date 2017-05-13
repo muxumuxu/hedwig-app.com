@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+bundle exec middleman build --build-dir=docs
+
+git checkout master
+git add .
+git commit -m "Deploy website"
+git push -f origin master
