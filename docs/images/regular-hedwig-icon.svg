@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="39px" viewBox="0 0 30 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>hedwig</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="71" height="71" rx="20"></rect>
+        <rect id="path-2" x="11.8582659" y="16.2230663" width="4.5" height="4.56"></rect>
+        <ellipse id="path-3" cx="7.5" cy="7.6" rx="7" ry="7.09333333"></ellipse>
+        <ellipse id="path-5" cx="7" cy="7.09333333" rx="7" ry="7.09333333"></ellipse>
+    </defs>
+    <g id="illustrations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home-v1" transform="translate(-351.000000, -236.000000)">
+            <g id="intro" transform="translate(330.000000, 219.000000)">
+                <g id="app">
+                    <g id="bg">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#EDEDED" stroke-width="1" x="0.5" y="0.5" width="70" height="70" rx="20"></rect>
+                    </g>
+                    <g id="hedwig" transform="translate(22.000000, 17.000000)">
+                        <path d="M0,0.506666667 L28,0.506666667 L28,21.3803287 C28,25.8021071 24.9449404,31.2662557 21.1845513,33.5797903 L14,38 L6.8154487,33.5797903 C3.05138032,31.2639921 0,25.8019286 0,21.3803287 L0,0.506666667 Z" id="shape" stroke="#4CD964" fill-opacity="0.1" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M0,13.1733333 C0,21.008413 6.2680135,27.36 14,27.36 C21.7319865,27.36 28,21.008413 28,13.1733333 L28,0.51195344 L0.0263327049,0.51195344 L0,13.1733333 Z" id="shape" stroke="#4CD964" fill-opacity="0.1" fill="#4CD964" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <g id="shape" transform="translate(14.188655, 18.431170) rotate(45.000000) translate(-14.188655, -18.431170) ">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            <rect stroke="#4CD964" stroke-width="1" x="12.3582659" y="16.7230663" width="3.5" height="3.56"></rect>
+                        </g>
+                        <g id="eye" transform="translate(13.000000, 5.066667)">
+                            <g transform="translate(0.500000, 0.506667)">
+                                <mask id="mask-4" fill="white">
+                                    <use xlink:href="#path-3"></use>
+                                </mask>
+                                <use id="Oval-Copy-2" stroke="#4CD964" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-3"></use>
+                                <ellipse id="Oval-2" fill="#4CD964" mask="url(#mask-4)" cx="7.5" cy="7.6" rx="2.5" ry="2.53333333"></ellipse>
+                            </g>
+                        </g>
+                        <g id="eye" transform="translate(0.000000, 6.080000)">
+                            <g>
+                                <mask id="mask-6" fill="white">
+                                    <use xlink:href="#path-5"></use>
+                                </mask>
+                                <use id="Oval-Copy-2" stroke="#4CD964" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-5"></use>
+                                <ellipse id="Oval-2" fill="#4CD964" mask="url(#mask-6)" cx="7" cy="7.09333333" rx="2.5" ry="2.53333333"></ellipse>
+                            </g>
+                        </g>
+                        <path d="M14.2533417,14.7245966 C13.8357833,6.98896988 7.51340369,0.84668427 -0.224707173,0.84668427" id="line" stroke="#4CD964" stroke-linecap="round" stroke-linejoin="round" transform="translate(7.014317, 7.785640) scale(-1, 1) rotate(-90.000000) translate(-7.014317, -7.785640) "></path>
+                        <path d="M28.1270715,14.7614766 C27.7478671,6.98926855 21.409063,0.805752719 13.6450244,0.805752719" id="line" stroke="#4CD964" stroke-linecap="round" stroke-linejoin="round" transform="translate(20.886048, 7.783615) rotate(-90.000000) translate(-20.886048, -7.783615) "></path>
+                        <g id="h" transform="translate(12.000000, 24.826667)" fill="#4CD964">
+                            <rect id="shape" x="0" y="0" width="1" height="5.06666667"></rect>
+                            <rect id="shape" x="3" y="0" width="1" height="5.06666667"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
