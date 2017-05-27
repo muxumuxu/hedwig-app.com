@@ -8,13 +8,13 @@ fr:
       link: "../"
     download:
       title: Télécharger
-      link: "#"
+      link: "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1193055246&mt=8"
 
   hero:
-    title: Programmez vos SMS avec Hedwig, et n'oubliez plus 
+    title: Programmez vos SMS avec Hedwig, et n'oubliez plus
     download:
       title: Télécharger sur l'App Store
-      link: "#"
+      link: "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1193055246&mt=8"
 
   footer:
     muxu:
@@ -25,4 +25,4 @@ fr:
       link: "../legal"
     lang:
       title: Version anglaise
-      link: "../"
+      link: "../en"
