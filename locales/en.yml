@@ -10,10 +10,18 @@ en:
       link: "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1193055246&mt=8"
 
   hero:
-    title: Schedule SMS with Hedwig, <and never forget
+    title: "Schedule texts with Hedwig, <br>and never forget "
+    rent: to pay your rent
+    birthday: any birthday
+    keys: where your keys are
     download:
       title: Download on the App Store
       link: "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1193055246&mt=8"
+
+  message:
+    rent: Last day to pay the rent, check for bank transfer ⚠️
+    birthday: Happy birthday Leona! Hope you have an amazing one 🚗🎂🍾
+    keys: Hi please don't forget to bring my keys to the office
 
   footer:
     muxu:
