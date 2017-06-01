@@ -30,46 +30,6 @@ header
           color: $brand-green
           text-decoration: none
 
-.fade
-  animation-duration: 5s
-  animation-name: fade
-  @keyframes fade
-    0%
-      opacity: 0
-    20%
-      opacity: 1
-    80%
-      opacity: 1
-    100%
-      opacity: 0
-
-.bubble_fade
-  animation-duration: 2s
-  animation-fill-mode: forwards
-  animation-name: fadeInUp
-  @keyframes fadeInUp
-    from
-      opacity: 0
-      -webkit-transform: translate3d(0, 20px, 0)
-      transform: translate3d(0, 20px, 0)
-
-    to
-      opacity: 1
-      -webkit-transform: none
-      transform: none
-
-.message_status_fade
-  animation-duration: 2s
-  animation-delay: 2s
-  animation-name: fade
-  animation-fill-mode: forwards
-  opacity: 0
-  @keyframes fade
-    from
-      opacity: 0
-    to
-      opacity: 1
-
 .wrapper
   max-width: 900px
   margin: 100px auto
@@ -95,6 +55,21 @@ header
       // 35px / 30px
       h1, span
         display: inline
+
+      // Text animation
+      .fade
+        animation-duration: 5s
+        animation-name: fade
+        @keyframes fade
+          0%
+            opacity: 0
+          20%
+            opacity: 1
+          80%
+            opacity: 1
+          100%
+            opacity: 0
+
     img
       margin-top: 30px
       &:hover
@@ -122,6 +97,7 @@ header
       position: absolute
       top: 0
       left: 70px
+
       .device
         width: 530px
         height: 870px
@@ -141,6 +117,34 @@ header
             color: $lighter-grey
             font-size: 0.6875em
             // 11px / 16px
+
+        // Animations
+        .bubble_fade
+          animation-duration: 2s
+          animation-fill-mode: forwards
+          animation-name: fadeInUp
+          @keyframes fadeInUp
+            from
+              opacity: 0
+              -webkit-transform: translate3d(0, 20px, 0)
+              transform: translate3d(0, 20px, 0)
+            to
+              opacity: 1
+              -webkit-transform: none
+              transform: none
+
+        .message_status_fade
+          animation-duration: 2s
+          animation-delay: 2s
+          animation-name: fade
+          animation-fill-mode: forwards
+          opacity: 0
+          @keyframes fade
+            from
+              opacity: 0
+            to
+              opacity: 1
+
         &.iphone
           background-image: url(../images/phone-iphone.svg)
           .screen
@@ -154,8 +158,6 @@ header
               padding: 12px
               float: right
               margin: 10px 10px 7px
-              &:after
-                content: "Dernier jour pour payer le loyer, ne pas oublier le virement ⚠️"
             p
               float: right
               margin-right: 10px
@@ -172,8 +174,6 @@ header
               border-radius: 9px
               float: right
               margin: 10px 10px 7px
-              &:after
-                content: "Bon anniversaire Léona ! J’espère que tout roule pour toi ! 🚗🎂🍾"
             p
               float: right
               margin-right: 10px
@@ -190,8 +190,6 @@ header
               border-radius: 0
               float: left
               margin: 35px 0 0 10px
-              &:after
-                content: "Hello n'oublie pas de rapporter mes clés au bureau stp"
             p
               position: absolute
               top: 10px

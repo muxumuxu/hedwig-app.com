@@ -3,15 +3,25 @@
 var interval = 7000;
 
 // Change sentence
-var span = document.getElementsByTagName("span")[0];
-var texts = ["<span class='fade'> de payer votre loyer</span>", "<span class='fade'> aucun anniversaire</span>", "<span class='fade'> où sont vos clés</span>"]
+var iphoneSpan = document.getElementById("iphone_sentence");
+var androidSpan = document.getElementById("android_sentence");
+var mukiaSpan = document.getElementById("mukia_sentence");
+var spans = [iphoneSpan, androidSpan, mukiaSpan];
 
 var showSentences = function() {
-  texts.forEach(function(text, index, arr) {
+  spans.forEach(function(span, index, arr) {
     setTimeout(function() {
-      span.innerHTML = text;
+      span.style.display = "inline";
 
-      if (index == arr.length - 1) {
+      if (index > 0) {
+        var previousSpan = arr[index - 1];
+        previousSpan.style.display = "none";
+      } else {
+        var latestSpan = arr[arr.length - 1];
+        latestSpan.style.display = "none";
+      }
+
+      if (index == arr.length - 1) { // Restart the animation
         setTimeout(showSentences, interval);
       }
     }, index * interval);

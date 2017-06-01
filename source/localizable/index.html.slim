@@ -15,7 +15,12 @@ header
     .icon
     .title
       h1 = t 'hero.title'
-      span
+      span.fade#iphone_sentence style="display: none;"
+        = " de payer votre loyer"
+      span.fade#android_sentence style="display: none;"
+        = " aucun anniversaire"
+      span.fade#mukia_sentence style="display: none;"
+        = " où sont vos clés"
     = link_to t 'nav.home.link'
       = image_tag "app-store-badge.svg"
     - if I18n.locale == :fr
@@ -36,14 +41,17 @@ header
       .iphone.device#iphone style="display: none;"
         .screen
           .message#iphone_message
+            = "Dernier jour pour payer le loyer, ne pas oublier le virement ⚠️"
           p.message_status_fade = "Hedwig - Now"
 
       #android.device.android style="display: none;"
         .screen
           #android_message.message
+            = "Bon anniversaire Léona ! J’espère que tout roule pour toi ! 🚗🎂🍾"
           p.message_status_fade = "Hedwig - Now"
 
       #mukia.device.mukia style="display: none;"
         .screen
           #mukia_message.message
+            = "Hello n'oublie pas de rapporter mes clés au bureau stp"
           p.message_status_fade = "Hedwig - Now"
