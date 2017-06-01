@@ -33,9 +33,8 @@ header
               = item[:title]
               
   .right 
-    .screen
-      .message.fadeinup
-        = "Bon anniversaire Léona ! J’espère que tout roule pour toi ! 🚗🎂🍾"
-      p = "Hedwig - Now"
-    .hand
-      = image_tag "phone-iphone.svg", class: "device"
+    .hand 
+      #device.iphone
+        .screen
+          .message
+          p = "Hedwig - Now"

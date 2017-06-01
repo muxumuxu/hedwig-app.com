@@ -43,21 +43,6 @@ header
     100%
       opacity: 0
 
-.fadeinup
-  animation-duration: 2s
-  animation-fill-mode: forwards
-  animation-name: fadeInUp
-  @keyframes fadeInUp
-    from
-      opacity: 0
-      -webkit-transform: translate3d(0, 20px, 0)
-      transform: translate3d(0, 20px, 0)
-
-    to
-      opacity: 1
-      -webkit-transform: none
-      transform: none
-
 .wrapper
   max-width: 900px
   margin: 100px auto
@@ -110,39 +95,145 @@ header
       position: absolute
       top: 0
       left: 70px
-    .screen
-      position: absolute
-      top: 106px
-      left: 153px
-      width: 216px
-      height: 290px
-      z-index: 2
-      .message
-        z-index: 2
-        background-color: $brand-green
-        color: $white
-        border-radius: 15px
-        width: 146px
-        padding: 12px
-        float: right
-        margin: 10px 10px 7px
-        font-size: 0.9375em
-        // 15px / 16px
-        line-height: 1.1333333333em
-        // 17px / 15px
-      p
-        float: right
-        margin-right: 10px
-        color: $lighter-grey
-        font-size: 0.6875em
-        // 11px / 16px
-        animation-duration: 2s
-        animation-delay: 2s
-        animation-name: fade
-        animation-fill-mode: forwards
-        opacity: 0
-        @keyframes fade
-          from
-            opacity: 0
-          to
-            opacity: 1
+      #device
+        width: 530px
+        height: 870px
+        .screen
+          position: absolute
+          z-index: 2
+          .message
+            z-index: 2
+            background-color: $brand-green
+            color: $white
+            font-size: 0.9375em
+            // 15px / 16px
+            line-height: 1.1333333333em
+            // 17px / 15px
+          p
+            color: $lighter-grey
+            font-size: 0.6875em
+            // 11px / 16px
+        &.iphone
+          background-image: url(../images/phone-iphone.svg)
+          .screen
+            top: 106px
+            left: 83px
+            width: 216px
+            height: 290px
+            .message
+              border-radius: 15px
+              width: 146px
+              padding: 12px
+              float: right
+              margin: 10px 10px 7px
+              animation-duration: 2s
+              animation-fill-mode: forwards
+              animation-name: fadeInUp
+              @keyframes fadeInUp
+                from
+                  opacity: 0
+                  -webkit-transform: translate3d(0, 20px, 0)
+                  transform: translate3d(0, 20px, 0)
+
+                to
+                  opacity: 1
+                  -webkit-transform: none
+                  transform: none
+              &:after
+                content: "Dernier jour pour payer le loyer, ne pas oublier le virement ⚠️"
+            p
+              float: right
+              margin-right: 10px
+              animation-duration: 2s
+              animation-delay: 2s
+              animation-name: fade
+              animation-fill-mode: forwards
+              opacity: 0
+              @keyframes fade
+                from
+                  opacity: 0
+                to
+                  opacity: 1
+        &.android
+          background-image: url(../images/phone-android.svg)
+          .screen
+            width: 236px
+            height: 355px
+            top: 76px
+            left: 73px
+            .message
+              width: 145px
+              padding: 12px
+              border-radius: 9px
+              float: right
+              margin: 10px 10px 7px
+              animation-duration: 2s
+              animation-fill-mode: forwards
+              animation-name: fadeInUp
+              @keyframes fadeInUp
+                from
+                  opacity: 0
+                  -webkit-transform: translate3d(0, 20px, 0)
+                  transform: translate3d(0, 20px, 0)
+
+                to
+                  opacity: 1
+                  -webkit-transform: none
+                  transform: none
+              &:after
+                content: "Bon anniversaire Léona ! J’espère que tout roule pour toi ! 🚗🎂🍾"
+            p
+              float: right
+              margin-right: 10px
+              animation-duration: 2s
+              animation-delay: 2s
+              animation-name: fade
+              animation-fill-mode: forwards
+              opacity: 0
+              @keyframes fade
+                from
+                  opacity: 0
+                to
+                  opacity: 1
+        &.mukia
+          background-image: url(../images/phone-mukia.svg)
+          .screen
+            top: 69px
+            left: 90px
+            width: 161px
+            height: 218px
+            .message
+              width: 110px
+              padding: 10px
+              border-radius: 0
+              float: left
+              margin: 35px 0 0 10px
+              animation-duration: 2s
+              animation-fill-mode: forwards
+              animation-name: fadeInUp
+              @keyframes fadeInUp
+                from
+                  opacity: 0
+                  -webkit-transform: translate3d(0, 20px, 0)
+                  transform: translate3d(0, 20px, 0)
+
+                to
+                  opacity: 1
+                  -webkit-transform: none
+                  transform: none
+              &:after
+                content: "Hello n'oublie pas de rapporter mes clés au bureau stp"
+            p
+              position: absolute
+              top: 10px
+              left: 10px
+              animation-duration: 2s
+              animation-delay: 2s
+              animation-name: fade
+              animation-fill-mode: forwards
+              opacity: 0
+              @keyframes fade
+                from
+                  opacity: 0
+                to
+                  opacity: 1
