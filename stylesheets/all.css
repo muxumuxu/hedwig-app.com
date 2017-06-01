@@ -97,7 +97,7 @@ header {
       background: url(../images/regular-hedwig-icon.svg) no-repeat 21px 17px;
       margin-bottom: 20px; }
     .wrapper .left .title {
-      max-width: 480px;
+      width: 500px;
       font-family: "Roboto", sans-serif;
       font-size: 1.875em;
       color: #000;
