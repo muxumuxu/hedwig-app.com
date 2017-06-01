@@ -8,3 +8,4 @@ gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
 gem 'sass'
 gem 'slim', '~> 3.0.2'
 gem 'middleman-livereload'
+gem 'middleman-deploy', '~> 2.0.0.pre.alpha'

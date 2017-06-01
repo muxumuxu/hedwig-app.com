@@ -23,6 +23,17 @@ configure :development do
   activate :livereload
 end
 
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.branch = 'gh-pages'
+  deploy.build_before = true
+end
+
+configure :build do
+  activate :directory_indexes
+  set :relative_links, true
+end
+
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
 
