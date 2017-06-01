@@ -43,6 +43,33 @@ header
     100%
       opacity: 0
 
+.bubble_fade
+  animation-duration: 2s
+  animation-fill-mode: forwards
+  animation-name: fadeInUp
+  @keyframes fadeInUp
+    from
+      opacity: 0
+      -webkit-transform: translate3d(0, 20px, 0)
+      transform: translate3d(0, 20px, 0)
+
+    to
+      opacity: 1
+      -webkit-transform: none
+      transform: none
+
+.message_status_fade
+  animation-duration: 2s
+  animation-delay: 2s
+  animation-name: fade
+  animation-fill-mode: forwards
+  opacity: 0
+  @keyframes fade
+    from
+      opacity: 0
+    to
+      opacity: 1
+
 .wrapper
   max-width: 900px
   margin: 100px auto
@@ -95,9 +122,10 @@ header
       position: absolute
       top: 0
       left: 70px
-      #device
+      .device
         width: 530px
         height: 870px
+        background-repeat: no-repeat
         .screen
           position: absolute
           z-index: 2
@@ -126,34 +154,11 @@ header
               padding: 12px
               float: right
               margin: 10px 10px 7px
-              animation-duration: 2s
-              animation-fill-mode: forwards
-              animation-name: fadeInUp
-              @keyframes fadeInUp
-                from
-                  opacity: 0
-                  -webkit-transform: translate3d(0, 20px, 0)
-                  transform: translate3d(0, 20px, 0)
-
-                to
-                  opacity: 1
-                  -webkit-transform: none
-                  transform: none
               &:after
                 content: "Dernier jour pour payer le loyer, ne pas oublier le virement ⚠️"
             p
               float: right
               margin-right: 10px
-              animation-duration: 2s
-              animation-delay: 2s
-              animation-name: fade
-              animation-fill-mode: forwards
-              opacity: 0
-              @keyframes fade
-                from
-                  opacity: 0
-                to
-                  opacity: 1
         &.android
           background-image: url(../images/phone-android.svg)
           .screen
@@ -167,34 +172,11 @@ header
               border-radius: 9px
               float: right
               margin: 10px 10px 7px
-              animation-duration: 2s
-              animation-fill-mode: forwards
-              animation-name: fadeInUp
-              @keyframes fadeInUp
-                from
-                  opacity: 0
-                  -webkit-transform: translate3d(0, 20px, 0)
-                  transform: translate3d(0, 20px, 0)
-
-                to
-                  opacity: 1
-                  -webkit-transform: none
-                  transform: none
               &:after
                 content: "Bon anniversaire Léona ! J’espère que tout roule pour toi ! 🚗🎂🍾"
             p
               float: right
               margin-right: 10px
-              animation-duration: 2s
-              animation-delay: 2s
-              animation-name: fade
-              animation-fill-mode: forwards
-              opacity: 0
-              @keyframes fade
-                from
-                  opacity: 0
-                to
-                  opacity: 1
         &.mukia
           background-image: url(../images/phone-mukia.svg)
           .screen
@@ -208,32 +190,9 @@ header
               border-radius: 0
               float: left
               margin: 35px 0 0 10px
-              animation-duration: 2s
-              animation-fill-mode: forwards
-              animation-name: fadeInUp
-              @keyframes fadeInUp
-                from
-                  opacity: 0
-                  -webkit-transform: translate3d(0, 20px, 0)
-                  transform: translate3d(0, 20px, 0)
-
-                to
-                  opacity: 1
-                  -webkit-transform: none
-                  transform: none
               &:after
                 content: "Hello n'oublie pas de rapporter mes clés au bureau stp"
             p
               position: absolute
               top: 10px
               left: 10px
-              animation-duration: 2s
-              animation-delay: 2s
-              animation-name: fade
-              animation-fill-mode: forwards
-              opacity: 0
-              @keyframes fade
-                from
-                  opacity: 0
-                to
-                  opacity: 1
