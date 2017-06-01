@@ -27,6 +27,9 @@ var showDevice = function() {
     setTimeout(function() {
       device.classList.add(img_class);
       device.classList.remove(img_classes[index -1]);
+        if (index == 0) {
+          device.classList.remove("mukia");
+        }
 
       if (index == arr.length - 1) {
         setTimeout(showDevice, 7000);
