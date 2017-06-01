@@ -11,10 +11,18 @@ fr:
       link: "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1193055246&mt=8"
 
   hero:
-    title: Programmez vos SMS avec Hedwig, et n'oubliez plus
+    title: "Programmez vos SMS avec Hedwig, et n'oubliez plus "
+    rent: de payer votre loyer
+    birthday: aucun anniversaire
+    keys: où sont vos clés
     download:
       title: Télécharger sur l'App Store
       link: "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1193055246&mt=8"
+
+  message:
+    rent: Dernier jour pour payer le loyer, ne pas oublier le virement ⚠️
+    birthday: Bon anniversaire Léona ! J’espère que tout roule pour toi ! 🚗🎂🍾
+    keys: Hello n'oublie pas de rapporter mes clés au bureau stp
 
   footer:
     muxu:
