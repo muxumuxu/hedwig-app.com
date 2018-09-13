@@ -1,57 +1,5 @@
-header
-  ul
-    li.support
-      = link_to t 'nav.support.link'
-        = t 'nav.support.title'
-    li.hedwig
-      = link_to t 'nav.home.link'
-        = t 'nav.home.title'
-    li.download
-      = link_to 'nav.download.link'
-        = t 'nav.download.title'
-
 .wrapper
   .left
     .icon
     .title
       h1 = t 'hero.title'
-      span.fade#iphone_sentence style="display: none;"
-        = t 'hero.rent'
-      span.fade#android_sentence style="display: none;"
-        = t 'hero.birthday'
-      span.fade#mukia_sentence style="display: none;"
-        = t 'hero.keys'
-    = link_to t 'nav.home.link'
-      = image_tag "app-store-badge.svg"
-    - if I18n.locale == :fr
-      ul.fr
-        -t('footer').each do |id, item|
-          li
-            = link_to item[:link]
-              = item[:title]
-    - else
-      ul.en
-        -t('footer').each do |id, item|
-          li
-            = link_to item[:link]
-              = item[:title]
-
-  .right
-    .hand
-      .iphone.device#iphone style="display: none;"
-        .screen
-          .message#iphone_message
-            = t 'message.rent'
-          p.message_status_fade = "Hedwig - Now"
-
-      #android.device.android style="display: none;"
-        .screen
-          #android_message.message
-            = t 'message.birthday'
-          p.message_status_fade = "Hedwig - Now"
-
-      #mukia.device.mukia style="display: none;"
-        .screen
-          #mukia_message.message
-            = t 'message.keys'
-          p.message_status_fade = "Hedwig - Now"
