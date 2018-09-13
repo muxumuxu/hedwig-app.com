@@ -79,7 +79,7 @@ header {
 
 .wrapper {
   max-width: 900px;
-  margin: 100px auto;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,9 +95,10 @@ header {
       width: 71px;
       height: 71px;
       background: url(../images/regular-hedwig-icon.svg) no-repeat 21px 17px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      margin-left: 20px; }
     .wrapper .left .title {
-      width: 500px;
+      padding: 20px;
       font-family: "Roboto", sans-serif;
       font-size: 1.875em;
       color: #000;
