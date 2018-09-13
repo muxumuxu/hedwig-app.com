@@ -13,21 +13,12 @@ header
     display: flex
     flex-direction: row
     justify-content: space-between
+    margin: 20px
     li
       display: inline
       &.support
         a
           color: $grey
-          text-decoration: none
-      &.hedwig
-        a
-          color: $black
-          text-decoration: none
-          background: url(../images/small-hedwig-icon.svg) no-repeat 0px 2px
-          padding-left: 27px
-      &.download
-        a
-          color: $brand-green
           text-decoration: none
 
 .wrapper
@@ -35,8 +26,10 @@ header
   margin: 0 auto
   display: flex
   flex-direction: row
+
   .left
     padding-top: 75px
+
     .icon
       border: 1px solid #ECECEC
       border-radius: 20px
@@ -45,6 +38,7 @@ header
       background: url(../images/regular-hedwig-icon.svg) no-repeat 21px 17px
       margin-bottom: 20px
       margin-left: 20px
+
     .title
       padding: 20px
       font-family: $primary-font
@@ -53,144 +47,6 @@ header
       font-weight: 300
       line-height: 1.5em
       margin-bottom: 200px
+
       h1, span
         display: inline
-
-      // Text animation
-      .fade
-        animation-duration: 5s
-        animation-name: fade
-        @keyframes fade
-          0%
-            opacity: 0
-          20%
-            opacity: 1
-          80%
-            opacity: 1
-          100%
-            opacity: 0
-
-    img
-      margin-top: 30px
-      &:hover
-        opacity: 0.8
-    ul
-      display: flex
-      flex-direction: row
-      justify-content: space-between
-      margin-top: 180px
-      &.fr
-        max-width: 425px
-      &.en
-        max-width: 330px
-      li
-        display: inline
-        a
-          font-size: 0.8125em
-          // 13px / 16px
-          color: $light-grey
-          text-decoration: none
-  .right
-    position: relative
-    font-family: $secondary-font
-    .hand
-      position: absolute
-      top: 0
-      left: 70px
-
-      .device
-        width: 530px
-        height: 870px
-        background-repeat: no-repeat
-        .screen
-          position: absolute
-          z-index: 2
-          .message
-            z-index: 2
-            background-color: $brand-green
-            color: $white
-            font-size: 0.9375em
-            // 15px / 16px
-            line-height: 1.1333333333em
-            // 17px / 15px
-          p
-            color: $lighter-grey
-            font-size: 0.6875em
-            // 11px / 16px
-
-        // Animations
-        .bubble_fade
-          animation-duration: 2s
-          animation-fill-mode: forwards
-          animation-name: fadeInUp
-          @keyframes fadeInUp
-            from
-              opacity: 0
-              -webkit-transform: translate3d(0, 20px, 0)
-              transform: translate3d(0, 20px, 0)
-            to
-              opacity: 1
-              -webkit-transform: none
-              transform: none
-
-        .message_status_fade
-          animation-duration: 2s
-          animation-delay: 2s
-          animation-name: fade
-          animation-fill-mode: forwards
-          opacity: 0
-          @keyframes fade
-            from
-              opacity: 0
-            to
-              opacity: 1
-
-        &.iphone
-          background-image: url(../images/phone-iphone.svg)
-          .screen
-            top: 106px
-            left: 83px
-            width: 216px
-            height: 290px
-            .message
-              border-radius: 15px
-              width: 146px
-              padding: 12px
-              float: right
-              margin: 10px 10px 7px
-            p
-              float: right
-              margin-right: 10px
-        &.android
-          background-image: url(../images/phone-android.svg)
-          .screen
-            width: 236px
-            height: 355px
-            top: 76px
-            left: 73px
-            .message
-              width: 145px
-              padding: 12px
-              border-radius: 9px
-              float: right
-              margin: 10px 10px 7px
-            p
-              float: right
-              margin-right: 10px
-        &.mukia
-          background-image: url(../images/phone-mukia.svg)
-          .screen
-            top: 69px
-            left: 90px
-            width: 161px
-            height: 218px
-            .message
-              width: 110px
-              padding: 10px
-              border-radius: 0
-              float: left
-              margin: 35px 0 0 10px
-            p
-              position: absolute
-              top: 10px
-              left: 10px
